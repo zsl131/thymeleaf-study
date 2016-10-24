@@ -4,5 +4,5 @@
 
 ### [study01](http://www.zslin.com/web/article/detail/25)
 
-Thymeleaf 的HelloWorld级别的例子
-简单介绍Thymeleaf的工作流程
++ Thymeleaf 的HelloWorld级别的例子
++ 简单介绍Thymeleaf的工作流程
