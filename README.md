@@ -7,7 +7,7 @@
 + Thymeleaf 的HelloWorld级别的例子
 + 简单介绍Thymeleaf的工作流程
 
-### [study02](http://www.zslin.com/web/article/detail/25)
+### [study02](http://www.zslin.com/web/article/detail/26)
 
 + 使用`spring.thymeleaf.cache=false`的方式让静态资源热部署；
 + 使用`devtools`插件让静态资源和`java`文件热部署。
