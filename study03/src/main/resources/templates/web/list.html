@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>study03 - 循环</title>
+</head>
+
+<body>
+    <table style="width:100%">
+        <tr>
+            <th>网站名称</th>
+            <th>网址</th>
+        </tr>
+        <tr th:each="obj : ${datas}">
+            <td th:text="${obj.name}">名称</td>
+            <td th:text="${obj.url}">网址</td>
+        </tr>
+    </table>
+
+    <hr/>
+
+    <table style="width:100%">
+        <tr>
+            <th>网站名称</th>
+            <th>网址</th>
+            <th>state：index</th>
+            <th>state：count</th>
+            <th>state：size</th>
+            <th>state：current</th>
+            <th>state：even</th>
+            <th>state：odd</th>
+            <th>state：first</th>
+            <th>state：last</th>
+        </tr>
+        <tr th:each="obj, objVs : ${datas}">
+            <td th:text="${obj.name}">名称</td>
+            <td th:text="${obj.url}">网址</td>
+            <td th:text="${objVs.index}">状态序号，从0开始</td>
+            <td th:text="${objVs.count}">状态序号，从1开始</td>
+            <td th:text="${objVs.size}">状态size</td>
+            <td th:text="${objVs.current.name}">状态 当前对象</td>
+            <td th:text="${objVs.even}">状态 奇数</td>
+            <td th:text="${objVs.odd}">状态 偶数</td>
+            <td th:text="${objVs.first}">状态 是否第一条</td>
+            <td th:text="${objVs.last}">状态 是否最后一条</td>
+        </tr>
+    </table>
+</body>
+</html>

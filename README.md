@@ -11,3 +11,14 @@
 
 + 使用`spring.thymeleaf.cache=false`的方式让静态资源热部署；
 + 使用`devtools`插件让静态资源和`java`文件热部署。
+
+### [study03](http://www.zslin.com/web/article/detail/31)
+
+Thymeleaf 之 初步使用
+
+1. 非表单数据显示（字符串拼接）
+2. 表单数据显示
+3. 三目运算
+4. if判断
+5. switch选择及case应用
+6. each循环（循环中状态对象的各属性）

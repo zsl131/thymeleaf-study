@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>study03 - 基础应用</title>
+</head>
+
+<body>
+    <h1>你好 : <b th:text="${name}">姓名</b>!</h1>
+    <p>现在年龄：<span th:text="${age}"></span></p>
+    <hr/>
+
+    <h2 th:text="'姓名：'+${name}"></h2>
+
+    <input th:value="${name}"/>
+    <input th:value="${age gt 30 ? '中年':'年轻'}"/>
+
+    <hr/>
+
+    <h1>
+        <b th:text="${name}"></b>：
+        <span th:if="${age ge 30}">中年</span>
+        <span th:unless="${age ge 30}">年轻</span>
+    </h1>
+    <hr/>
+
+    <p th:switch="${age}">
+        <p th:case="29">奔三</p>
+        <p th:case="*">其他年龄</p>
+    </p>
+</body>
+</html>
