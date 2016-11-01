@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Thymeleaf学习示例</title>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script type="text/javascript" src="/jquery-1.12.3.min.js"></script>
+        <script type="text/javascript" src="/bootstrap3/js/bootstrap.min.js"></script>
+        <link type="text/css" rel="stylesheet" href="/bootstrap3/css/bootstrap.min.css"/>
+    </head>
+    <body>
+        <div class="container text-center" style="text-align:center;border:1px #3b8cff solid;">
+            <h3>头部</h3>
+        </div>
+
+        <div class="container-fluid  center-container" style="margin-bottom:70px;">
+            <div th:include="this :: content"></div>
+        </div>
+
+        <div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+            <div class="container text-center login-bottom">
+                &copy; 2016
+            </div>
+        </div>
+    </body>
+</html>

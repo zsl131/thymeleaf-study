@@ -22,3 +22,7 @@ Thymeleaf 之 初步使用
 4. if判断
 5. switch选择及case应用
 6. each循环（循环中状态对象的各属性）
+
+### [study04](http://www.zslin.com/web/article/detail/32)
+
+Thymeleaf 之 页面模板应用
