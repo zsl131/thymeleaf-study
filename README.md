@@ -26,3 +26,7 @@ Thymeleaf 之 初步使用
 ### [study04](http://www.zslin.com/web/article/detail/32)
 
 Thymeleaf 之 页面模板应用
+
+### [study05](http://www.zslin.com/web/article/detail/33)
+
+Thymeleaf 之 内置对象、定义变量、URL参数及标签自定义属性

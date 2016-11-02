@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Thymeleaf 之 内置对象、定义变量、URL参数及标签自定义属性</title>
+    </head>
+    <body>
+        <h1>Thymeleaf 之 内置对象、定义变量、URL参数及标签自定义属性</h1>
+        <hr/>
+
+        <h2>当前时间：<span th:text="${#dates.format(curDate, 'yyyy-MM-dd HH:mm:ss')}"></span></h2>
+        <br/>
+
+        <h2>随机金额：<span th:text="${#numbers.formatDecimal(money, 0, 2)}"></span></h2>
+
+        <h2>随机金额：<span th:text="${#numbers.formatDecimal(money, 3, 2)}"></span></h2>
+
+        <hr/>
+
+        <h2>随机金额2：<span th:text="${#numbers.formatDecimal(money2, 0, 2)}"></span></h2>
+
+        <h2>随机金额2：<span th:text="${#numbers.formatDecimal(money2, 3, 2)}"></span></h2>
+
+        <br/>
+
+        <h2>数据长度：<span th:text="${#lists.size(datas)}"></span></h2>
+        <br/>
+
+        <h2>URL参数：<span th:text="${#httpServletRequest.getParameter('page')}"></span></h2>
+
+        <div th:with="curPage=${#httpServletRequest.getParameter('page')}">
+            <h3>当前页码：<span th:text="${curPage}"></span></h3>
+        </div>
+
+        <hr/>
+
+        <h2>自定义属性：<span th:attr="myDate=${#dates.format(curDate, 'yyyy-mm-dd')}, myMoney=${money}"></span></h2>
+
+
+    </body>
+</html>
